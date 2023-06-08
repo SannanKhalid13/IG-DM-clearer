@@ -34,7 +34,7 @@ class acc:
         },timeout=30)
 
     def get_msg_ids(self):
-        url=f"https://www.instagram.com/api/v1/direct_v2/threads/{thread_id}/" #D alt
+        url=f"https://www.instagram.com/api/v1/direct_v2/threads/{thread_id}/"
         #url=f"https://www.instagram.com/api/v1/direct_v2/threads/{thread_id}/?cursor={cursor_id}"
         req=self.session.get(url)
         print(req.status_code)
